@@ -10,8 +10,21 @@
 } */
 
 
-[title$="Para"]
-{
+/* [id$="aragraph"] {
+  color: blue;
+  font-size: 30px;
+} */
+
+[id|="fo"] {
   color: orange;
   font-size: 30px;
 }
+/* }注意这里是 要么是fo 要么是 fo-xxxx */
+
+[id|="fo"] {
+  color: orange;
+  font-size: 30px;
+}
+
+/* 
+一般^表示开头$表示结尾 */
