@@ -10,7 +10,7 @@
 } */
 
 
-[title$=Para]
+[title$="Para"]
 {
   color: orange;
   font-size: 30px;

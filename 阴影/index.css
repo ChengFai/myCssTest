@@ -1,0 +1,16 @@
+#poem {
+  border: 1px solid black;
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  writing-mode: vertical-rl;
+}
+
+
+.p1 {
+  direction: ltr;
+}
+
+.p2 {
+  direction: rtl;
+}
