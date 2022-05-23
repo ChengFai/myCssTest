@@ -1,0 +1,13 @@
+#container {
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  background-color: #98d9f7;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgb(11, 156, 96);
+  background-color: orange;
+}
