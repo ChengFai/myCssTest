@@ -1,5 +1,11 @@
+#pulserContain {
+  width: 100%;
+  height: 400px;
+  border: 10px solid orange;
+}
+
 .pulser {
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
   width: 100px;
   height: 100px;
   background: rebeccapurple;
