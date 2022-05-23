@@ -1,3 +1,9 @@
+* Decorative styles */
+body {
+  display: grid;
+  place-items: center;
+}
+
 #pulserContain {
   width: 100%;
   height: 400px;
@@ -37,10 +43,4 @@
   background: blueviolet;
   border-radius: 50%;
   z-index: -1;
-}
-
-/* Decorative styles */
-body {
-  display: grid;
-  place-items: center;
 }

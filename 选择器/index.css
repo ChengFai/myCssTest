@@ -14,6 +14,11 @@
   color: blue;
   font-size: 30px;
 } */
+div[data-v-1d8f8f6c], div[data-v-49729759]{
+  color: rgb(233, 38, 152);
+  font-size: 40px;
+}
+
 
 [id|="fo"] {
   color: orange;

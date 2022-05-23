@@ -1,0 +1,33 @@
+@keyframes move {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 1000px;
+    }
+  }
+  
+  div {
+    height: 100px;
+    width: 100px;
+    background: orange;
+    border-radius: 50%;
+    margin: 10px 0;
+    position: relative;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  #ball1 {
+    animation-direction: normal;
+  }
+  #ball2 {
+    animation-direction: reverse;
+  }
+  #ball3 {
+    animation-direction: alternate;
+  }
+  #ball4 {
+    animation-direction: alternate-reverse;
+  }
