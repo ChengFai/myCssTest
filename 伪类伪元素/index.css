@@ -1,0 +1,64 @@
+div:empty {
+    width: 100%;
+    height: 20px;
+    background-color: #f00;
+}
+
+input:invalid {
+    border-color: red;
+}
+  
+input:valid {
+    border-color: green;
+}
+article :is(#firstPara, #secondPara) {
+    color: rgb(44, 138, 122)
+}
+input {
+    min-width: 320px;
+    padding: 0.5rem 1rem;
+    line-height: 1;
+    font: inherit;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+/* 这是半透明效果 */
+#open {
+    border: none;
+    float: right;
+}
+#open:active {
+    color: red;
+    transform: scale(1.5);
+}
+#dlg {
+    text-align: center;
+}
+.mask::after {
+    content: '';
+    background: rgba(255, 253, 253, 0.2);}
+
+#myArticle {
+    max-width:  70%;
+    margin: 0 auto;
+}
+
+#myArticle h1{
+    text-align: center;
+}
+
+
+#myArticle p{
+    font-size: 24px;
+    font-family: "楷体","楷体_GB2312";
+    text-indent: 2em;
+}
+
+#myArticle p::selection {
+    background-color: #ec6b1b;
+    color: #ffffff;
+}

@@ -1,0 +1,17 @@
+/* form+div {
+  width: 100%;
+  background-color: red;
+  height: 20px;
+}
+
+#firstPara~p{
+  color: orange;
+  font-size: 30px;
+} */
+
+
+[title$=Para]
+{
+  color: orange;
+  font-size: 30px;
+}
