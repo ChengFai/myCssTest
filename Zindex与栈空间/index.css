@@ -1,0 +1,13 @@
+.poem {
+  background: red;
+}
+.author {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: green;
+}
+
+.author span {
+  z-index: -1;
+}
