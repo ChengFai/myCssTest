@@ -15,11 +15,11 @@ thead th {
   color: #fff;
 }
 
-td, th {
+td,
+th {
   padding: .5em;
 }
-
-td:not(:last-child), 
+td:not(:last-child),
 th:not(:last-child) {
   border-right: 1px solid;
 }
@@ -31,4 +31,4 @@ tr:not(:last-child) th {
 
 tbody tr:first-child td {
   border-top: 1px solid;
-} 
+}
