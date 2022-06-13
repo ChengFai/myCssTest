@@ -1,7 +1,8 @@
 #forText {
   font-size: 50px;
   color: rgba(0, 0, 0, 0.721);
-  text-shadow: 0px 30px 0px red, 30px 0px 0px rgb(34, 58, 242); 
+  text-shadow: 0px 30px 0px red, 
+              30px 0px 0px rgb(34, 58, 242); 
 }
 img {
     filter: drop-shadow(0px 0px 0px hotpink)
@@ -37,4 +38,29 @@ h1 {
   border-radius: 50%;
   border: 5px solid black;
   box-shadow:  0px 10px 0px 10px green
+}
+
+.parent-element {
+  filter: drop-shadow(10rem 0 0 rgba(0, 30, 200, 0.8)) 
+          drop-shadow(-10rem 0 0 rgba(0, 30, 200, 0.8)) 
+          drop-shadow(20rem 0 0 rgba(0, 30, 200, 0.8)) 
+          drop-shadow(-20rem 0 0 rgba(0, 30, 200, 0.8));
+  transition: filter 600ms;
+}
+
+.parent-element:hover {
+  filter: drop-shadow(0 0 0 rgba(0, 30, 200, 0.8));
+}
+
+.clipped-element {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  background-color: deeppink;
+  clip-path: polygon(0 0, 
+                    50% 0,
+                    100% 50%,
+                    50% 100%,
+                    0 100%,
+                    50% 50%)
 }
