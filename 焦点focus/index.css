@@ -9,6 +9,11 @@
   background-color: aqua;
 }
 
-#btn {
-  
+* :focus {
+  outline: 3px solid red;
+  outline-offset: 20px;
+  /* outline类似于border，但是只有一个边框，offset则像padding */
 }
+/* #btn {
+
+} */
