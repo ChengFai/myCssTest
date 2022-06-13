@@ -9,11 +9,38 @@
   background-color: aqua;
 }
 
-* :focus {
+.my-element *:focus {
+  background: yellow !important;
+  color: #000;
   outline: 3px solid red;
-  outline-offset: 20px;
-  /* outline类似于border，但是只有一个边框，offset则像padding */
 }
+
+/* 
+.my-element:focus-within {
+  outline: 3px solid #333;
+} */
+
+.my-element {
+  border: 1px solid #777;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fefefe;
+  padding: 20px;
+}
+
+input[type="email"] {
+  margin-top: .5em;
+  font-size: inherit;
+  border: 1px solid #555;
+  width: 100%;
+}
+
+body {
+  background: #ccc;
+  font-family: arial;
+  line-height:2;
+}
+
 /* #btn {
 
 } */
