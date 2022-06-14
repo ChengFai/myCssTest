@@ -1,0 +1,25 @@
+
+.box0 {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    transform: scaleY(50%);
+    background-color:  cyan;
+}
+
+
+.box1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    background-color:  cyan;
+}
+
+
+.box2 {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    transform: scale(1.01, 0.3);
+    background-color:  cyan;
+}
