@@ -3,7 +3,6 @@
     border: 1px solid black;
     width: 500px;
     height: 300px;
-    transform: scaleY(50%);
     background-color:  cyan;
 }
 
@@ -12,6 +11,7 @@
     border: 1px solid black;
     width: 500px;
     height: 300px;
+    transform: translate(100px, 0);
     background-color:  cyan;
 }
 
@@ -20,6 +20,6 @@
     border: 1px solid black;
     width: 500px;
     height: 300px;
-    transform: scale(1.01, 0.3);
+    transform: translate(100%, 0);
     background-color:  cyan;
 }
