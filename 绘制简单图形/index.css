@@ -1,0 +1,32 @@
+/* #triangle {
+  width: 0px;
+  height: 0px;
+  border-left: 150px solid blue;
+  border-right: 150px solid yellow;
+  border-bottom: 200px solid green;
+  border-top: 200px solid red;
+} */
+
+#triangle {
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  border-top: 200px solid red;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid transparent;
+}
+
+#horizonLine {
+  transform: scale(0.5, 0.5);
+}
+
+#largeText {
+  font-size: 9px;
+  -webkit-text-size-adjust: none;
+}
+
+#tinyText {
+  font-size: 3px;
+  -webkit-text-size-adjust: none;
+}
