@@ -9,6 +9,8 @@
     width:100%;
     height: 60vh;
     background-color: lightgrey;
+    grid-template-rows: 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-columns: repeat(auto-fill, 200px); */
     /* 上面这个表示自动填充尽可能多的元素,每个元素column宽200px */
     
@@ -17,13 +19,22 @@
 
     /* grid-template-columns: 1fr 1fr 200px; */
     /* 这句说明最后一列占固定200px, 剩下的按照1:1平分 */
+    place-items: start;
+    justify-content: space-between;
+    /* place-content: <align-content> <justify-content> */
+    /* align指的是垂直方向 */
+    /* justify指的是水平方向*/
+    /* 两者合并简写为place-content */
+    /* align-content: flex-start | flex-end | center | space-between | space-around */
+    /* justify-content: flex-start | flex-end | center | space-between | space-around */
 }
 .grid-item {
-    line-height: 100px;
-    padding: auto auto;
-    background-color: cyan;
+    width: 180px;
+    height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: cyan;
     font-size: 30px;
+    padding: 0 auto;  
     text-align: center;
 }
 
@@ -36,6 +47,24 @@
 .box7 { background-color: rgb(0, 176, 103); }
 .box8 { background-color: rgb(81, 11, 193); }   
 .box9 { background-color: rgb(102, 38, 30); }
+.boxM {
+    background-color: rgb(210, 34, 169); 
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    padding: 0 auto;  
+    text-align: center;
+}   
+.boxN {
+    background-color: rgb(153, 245, 41);
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    padding: 0 auto;  
+    text-align: center;
+}
 </style>
 </head>
 <body>
@@ -52,6 +81,8 @@
   <div class="grid-item box7">7</div>
   <div class="grid-item box8">8</div>
   <div class="grid-item box9">9</div>
+  <div class="boxM">M</div>
+  <div class="boxN">N</div>
 </div>
 
 </body>
