@@ -5,64 +5,53 @@
 <title>Document</title>
 <style>
 .grid-container {
-  display: flex;
-  height: 450px;
-  background-color: #2196F3;
-  padding: 10px;
-  justify-content: flex-start;
-  /* 行内靠左对齐 */
-  align-items: flex-end;
-  /* 行内底部对齐 */
-  flex-wrap: wrap;
-  align-content: space-around;
-  /* 多行在容器内分布 */
+    display: grid;
+    width:100%;
+    height: 60vh;
+    background-color: lightgrey;
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    /* 上面这个表示自动填充尽可能多的元素,每个元素column宽200px */
+    
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* 这句表示分成三列,宽度比例1:2:3, 共同构成100%宽度; */
+
+    /* grid-template-columns: 1fr 1fr 200px; */
+    /* 这句说明最后一列占固定200px, 剩下的按照1:1平分 */
 }
 .grid-item {
-  background-color: cyan;
-  flex: 0 0 auto;
-  width: 28%;
-  height: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  font-size: 30px;
-  text-align: center;
+    line-height: 100px;
+    padding: auto auto;
+    background-color: cyan;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
 }
 
-/* justify-content是单行内部左右如何排列
-align-items是单行内部垂直方向如何对齐
-align-content是多行之间方向如何对齐 */
-
-/* .special-item {
-    align-self: flex-end;
-    flex-grow: 0;
-    order: 10; 
-} */
+.box1 { background-color: red; }
+.box2 { background-color: rgb(255, 129, 19); }
+.box3 { background-color: rgb(118, 243, 72); }
+.box4 { background-color: rgb(38, 206, 248); }
+.box5 { background-color: rgb(204, 64, 255); }
+.box6 { background-color: rgb(255, 228, 141); }
+.box7 { background-color: rgb(0, 176, 103); }
+.box8 { background-color: rgb(81, 11, 193); }   
+.box9 { background-color: rgb(102, 38, 30); }
 </style>
 </head>
 <body>
 
-<h1>网格元素</h1>
-
-<p>网格布局父元素的 
-    <em>display</em> 
-    属性需要设置 
-    <em>grid</em> 
-    或 
-    <em>inline-grid</em>
-    。
-</p>
-
-<p>网格容器内的直系子元素自动布局为网格元素。</p>
-
+<h1>网格元素 Grid</h1>
+<p>网格容器container内的直系子元素自动布局为网格元素item。</p>
 <div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item" style="height: 30px;">2</div>
-  <div class="grid-item" style="height: 20px;">3</div>  
-  <div class="grid-item"style="height: 10px;">4</div>
-  <div class="grid-item special-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item" style="height: 15px;">7</div>
-  <div class="grid-item" style="height: 40px;">8</div>
-  <div class="grid-item">9</div>  
+  <div class="grid-item box1">1</div>
+  <div class="grid-item box2">2</div>
+  <div class="grid-item box3">3</div>  
+  <div class="grid-item box4">4</div>
+  <div class="grid-item box5">5</div>
+  <div class="grid-item box6">6</div>
+  <div class="grid-item box7">7</div>
+  <div class="grid-item box8">8</div>
+  <div class="grid-item box9">9</div>
 </div>
 
 </body>
