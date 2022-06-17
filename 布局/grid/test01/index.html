@@ -5,19 +5,37 @@
 <title>Document</title>
 <style>
 .grid-container {
-  display: grid;
+  display: flex;
   height: 450px;
-  grid-template-columns: 50px 100px auto;
   background-color: #2196F3;
   padding: 10px;
+  justify-content: flex-start;
+  /* 行内靠左对齐 */
+  align-items: flex-end;
+  /* 行内底部对齐 */
+  flex-wrap: wrap;
+  align-content: space-around;
+  /* 多行在容器内分布 */
 }
 .grid-item {
   background-color: cyan;
-  height: 60px;
+  flex: 0 0 auto;
+  width: 28%;
+  height: 100px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 30px;
   text-align: center;
 }
+
+/* justify-content是单行内部左右如何排列
+align-items是单行内部垂直方向如何对齐
+align-content是多行之间方向如何对齐 */
+
+/* .special-item {
+    align-self: flex-end;
+    flex-grow: 0;
+    order: 10; 
+} */
 </style>
 </head>
 <body>
@@ -37,13 +55,13 @@
 
 <div class="grid-container">
   <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
+  <div class="grid-item" style="height: 30px;">2</div>
+  <div class="grid-item" style="height: 20px;">3</div>  
+  <div class="grid-item"style="height: 10px;">4</div>
+  <div class="grid-item special-item">5</div>
   <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
+  <div class="grid-item" style="height: 15px;">7</div>
+  <div class="grid-item" style="height: 40px;">8</div>
   <div class="grid-item">9</div>  
 </div>
 
