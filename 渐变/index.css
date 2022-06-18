@@ -5,6 +5,65 @@
     red, yellow, orange, green, blue, indigo, violet);
 }
 
+/* .text_dis {
+    fill: linear-gradient(to right, #2fff5c, #26f159);
+} */
+.intro {
+  width: 100%;
+  background: linear-gradient(to top, #3c006b, #9948d9);
+  color: white;
+  padding: 7rem 2rem 4rem 2rem;
+}
+
+#fullTest {
+    height: 500px;
+    background: linear-gradient(to bottom right,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      purple
+    );
+}
+
+.intro h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  max-width: 18ch;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 50ch;
+}
+
+.intro a {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: currentColor;
+}
+
+.intro > * + * {
+  margin-top: 1.5em;
+}
+
+body {
+  padding: 0;
+}
+
+#centerLinear {
+    width: 600px;
+    line-height: 400px;
+    text-align: center;
+    background: radial-gradient(at 10% 50%,
+                                rgb(15, 177, 15) 20%, 
+                                blue 80%,
+                                white);
+}
+
 #linearStripe {
     border: 10px solid;
     width: 500px;
@@ -19,6 +78,8 @@
 }
 
 #pieChart {
+    line-height: 250px;
+    text-align: center;
     width: 250px;
     height: 250px;
     background: conic-gradient(
@@ -28,6 +89,7 @@
       plum 220deg 320deg,
       steelblue 320deg
     );
+    /* 注意开始和结束的0deg和360deg可以省略不写，但是不同颜色之间开始结束必须连续 */
     border-radius: 50%;
     border: 10px solid;
 }
