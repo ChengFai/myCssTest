@@ -4,3 +4,30 @@
     background: linear-gradient(45deg, 
     red, yellow, orange, green, blue, indigo, violet);
 }
+
+#linearStripe {
+    border: 10px solid;
+    width: 500px;
+    height: 500px;
+    background: repeating-linear-gradient(
+        green,
+        red 30px,
+        white 30px,
+        white 60px
+    );
+    /* 指定一个颜色开始，到某个px位置结束，再指定开始位置的颜色，如此重复 */
+}
+
+#pieChart {
+    width: 250px;
+    height: 250px;
+    background: conic-gradient(
+      gold 20deg,
+      lightcoral 20deg 190deg,
+      mediumturquoise 190deg 220deg,
+      plum 220deg 320deg,
+      steelblue 320deg
+    );
+    border-radius: 50%;
+    border: 10px solid;
+}
